@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:100,400&display=swap');
+body{
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+}
+header{
+    display:flex;
+    flex-direction: row;
+    position: sticky;
+    top:0;
+    align-items: center;
+    justify-content: space-around;
+    height: 10vh;
+    border-bottom: 1px solid rgb(196, 196, 196);
+    background-color: #fff;
+    
+}
+header ul li{
+    list-style-type: none;
+    display: inline;
+    padding: 1vw;
+}
+header a{
+    font-size: 2vw;
+    text-decoration: none;
+    color: #000;
+    
+
+}
+header ul li a{
+    text-decoration: none;
+    color: #000;
+    font-size: 1.1vw;
+}
+.first-page{
+    background-image: url("https://colorlib.com/shapely/wp-content/uploads/sites/12/2016/03/photo-1443527216320-7e744084f5a7-1.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 90vh;
+    display: flex;
+    justify-content:center;
+    flex-direction: column;
+    align-items: center;
+}
+.first-page h1{
+    font-size: 4vw;
+    color: #fff;
+    margin-bottom: 2vh;
+}
+.first-page p{
+    color: #fff;
+    font-size: 1.1vw;
+}
+button{
+    width: 15vw;
+    height: 7vh;
+    font-size: .9vw;
+}
+.button-white{
+    border: 2px solid #fff;
+    background-color: rgba(255, 255, 255, 0);
+    color: #fff;
+  
+}
+.button-white:hover{
+    border: 2px solid #fff;
+    background-color: #fff;
+    color: #000;
+}
+.button-violet{
+    border: 2px solid #745cf9;
+    background-color: #745cf9;
+    color: #fff;
+}
+.button-violet:hover{
+    border: 2px solid rgba(115, 92, 249, 0.897);
+    background-color: rgba(115, 92, 249, 0.877);
+    color: #fff;
+}
+
+.seo-page,
+.portofolio-page {
+    width: 100vw;
+    height: 75vh;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 5vh;
+    margin-top: 5vh;
+
+}
+.portofolio-page{
+    background-color: rgb(230, 230, 230);
+}
+.seo-page article,
+.portofolio-page article  {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 5vw;
+
+}
+
+.seo-page article:nth-of-type(1),
+.portofolio-page article:nth-of-type(2){
+    
+    margin-left: 5vw;
+}
+.seo-page article:nth-of-type(1) img ,
+.portofolio-page article:nth-of-type(2) img{
+    width: 45vw;
+}
+.seo-page article:nth-of-type(2) h1 ,
+.portofolio-page article:nth-of-type(1) h1
+{
+    font-size: 3vw;
+    color: #000;
+    width: 40vw;
+    margin-top: 0;
+}
+.seo-page article:nth-of-type(2) p ,
+.portofolio-page article:nth-of-type(1) p
+{
+    font-size: 1.3vw;
+    color: rgb(197, 197, 197);
+   
+    margin-top: 0;
+    margin-bottom: 4vh;
+
+}
+.parallax-page{
+    background-image: url("https://colorlib.com/shapely/wp-content/uploads/sites/12/2016/12/photo-1452723312111-3a7d0db0e024.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.parallax-page h1
+{
+    font-size: 4vw;
+    color: #fff;
+    margin-bottom: 2vh;
+}
+.parallax-page p 
+{
+    color: rgba(255, 255, 255, 0.89);
+    margin: 0;
+    
+}
+.parallax-page p:nth-of-type(2)
+{
+    margin-bottom: 2vh;
+}
+.limitless-page{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  
+}
+.limitless-page h1{
+    margin-top: 10vh;
+    font-size: 3vw;
+    color: #000;
+    margin-bottom: 2vh;
+}
+
+.limitless-page p{
+   
+    
+    color: rgb(185, 185, 185);
+    font-size: 1vw;
+    margin: 0;
+}
+.limitless-page p:nth-of-type(2){
+   
+    font-size: 1vw;
+    color: rgb(185, 185, 185);
+    margin-bottom: 2vh;
+   
+}
+.limitless-page img{
+    margin-top: 10vh;
+    width: 90vw;
+}
+.last-project-page{
+    background-color: #000;
+}
+.last-project-page article:nth-of-type(1){
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.last-project-page article:nth-of-type(1) h1{
+    color: #fff;
+    font-size: 3vw;
+    margin-bottom: 2vh;
+}
+.last-project-page article p{
+    color: #fff;
+    font-size: 1vw;
+}
+
+.grid-gallery{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto auto auto;
+    justify-content: center;
+    align-items: center;
+    
+}
+.grid-gallery div{
+    position: relative;
+    margin: 0;
+  
+}
+.overlay{
+position:  absolute;
+background-color: rgba(220, 220, 220, 0.192);
+top:100%;
+left:0;
+right:0;
+bottom: 0;
+transition: all 1s ease;
+overflow: hidden;
+margin: 0;
+
+}
+.overlay h2{
+    font-size: 1.2vw;
+    color: #fff;
+
+}
+div:hover .overlay{
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
